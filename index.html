@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://unpkg.com/mustard-ui@latest/dist/css/mustard-ui.min.css">
+    <link rel="stylesheet" href="./style.css">
     <title>Document</title>
 </head>
 
 <body>
-    <select id="city" style="color: #29407C; font-weight: 700;">
+    <select id="city" style="color: #29407C; font-weight: 700; background: none;">
         <option value="2643743">London</option>
         <option value="524894">Moscow</option>
         <option value="5128581">New York</option>
@@ -20,20 +21,31 @@
         <option value="1850147">Tokyo</option>
         <select>
 
-            <div class="pricing-table row">
-                <div class="package featured">
-                    <h6 style="color: #29407C"></h6>
-                    <p class="package-name">Moscow</p>
-                    <hr>
-                    <p class="price">10&deg;</p>
-                    <p class="disclaimer">Clouds</p>
-                    <hr>
-                    <ul class="features">
-                        <li>Feature 1</li>
-                        <li>Feature 1</li>
-                        <li>humidity level</li>
-                        <li>humidity level</li>
-                    </ul>
+            <div class="wrapper">
+                <div class="pricing-table row">
+                    <div class="package featured">
+                        <h6 style="color: #29407C"></h6>
+                        <p class="package-name">Moscow</p>
+                        <hr>
+                        <p class="price">10&deg;</p>
+                        <p class="disclaimer">Clouds</p>
+                        <hr>
+                        <ul class="features">
+                            <li>Feature 1</li>
+                            <li>Feature 1</li>
+                            <li>humidity level</li>
+                            <li>humidity level</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="clock">
+                    <div class="clock-face">
+                        <div class="hand hour-hand"></div>
+                        <div class="hand min-hand"></div>
+                        <div class="hand second-hand"></div>
+                    </div>
+                    <span>Current time in your city</span>
                 </div>
             </div>
             <script src='./script.js'></script>
