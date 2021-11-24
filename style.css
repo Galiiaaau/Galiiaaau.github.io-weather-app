@@ -87,3 +87,60 @@ span {
     display: inline-block;
     margin-top: 50px;
 }
+
+@media (max-width: 650px) {
+    .clock {
+        width: 20rem;
+        height: 20rem;
+        border: 15px solid  #cf9ad6;
+    }
+}
+
+@media (max-width: 530px) {
+    .wrapper {
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    body {
+        background: url(https://images.unsplash.com/photo-1626630317382-16dffa6362eb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80);
+        background-size: cover;
+    }
+    .pricing-table {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    .package {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    .price {
+        font-size: 25px !important;
+    }
+    p {
+        margin-bottom: 5px !important;
+    }
+    .features {
+        padding: 0 !important;
+    }
+}
+
+@media (max-width: 505px) {
+    .features li {
+        margin-bottom: 0 !important;
+    }
+    body {
+        font-size: 1.5rem;
+    }
+    .clock {
+        width: 15rem;
+        height: 15rem;
+        border: 10px solid  #cf9ad6;
+        margin-top: 0;
+    }
+    .price {
+        margin-top: 5px !important;
+    }
+}
