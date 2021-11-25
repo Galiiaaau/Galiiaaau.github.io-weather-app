@@ -21,6 +21,7 @@ function showWeather(data) {
     document.querySelector('.features').childNodes[3].innerHTML = `feels like : ${Math.round(data.main.feels_like)}` + '&deg;';
     document.querySelector('.features').childNodes[5].innerHTML = `humidity : ${data.main.humidity}` + '&#37;';
     document.querySelector('.features').childNodes[7].innerHTML = `wind speed : ${data.wind.speed} m/s`;
+    currentTimezoneInMillis = data.timezone * 1000;
 }
 
 getWeather();
@@ -32,8 +33,17 @@ const secondHand = document.querySelector('.second-hand');
 const minutesHand = document.querySelector('.min-hand');
 const hourHand = document.querySelector('.hour-hand');
 
-function setDate() {
+let currentTimezoneInMillis = 0;
+
+function getTimezonedDate() {
     let now = new Date();
+    let utcNow = new Date(now.getTime() + now.getTimezoneOffset() * 60 * 1000);
+    let timezonedNow = new Date(utcNow.getTime() + currentTimezoneInMillis);
+    return timezonedNow;
+}
+
+function setDate() {
+    let now = getTimezonedDate();
 
     const seconds = now.getSeconds();
     const secondsDegress = ((seconds / 60) * 360) + 90;

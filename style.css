@@ -4,7 +4,7 @@
 
 * {
     margin: 0;
-    padding: 0
+    padding: 0;
 }
 
 html {
@@ -44,6 +44,7 @@ option {
     border: none;
     background: none;
 }
+
 .pricing-table .package.featured .package-name {
     color: #29407C;
 }
@@ -83,9 +84,13 @@ option {
     transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
 }
 
-span {
-    display: inline-block;
-    margin-top: 50px;
+.second-hand {
+    height: 3px;
+    background:rgb(156, 73, 167);
+}
+
+.min-hand {
+    height: 3px;
 }
 
 @media (max-width: 650px) {
