@@ -1,5 +1,5 @@
 # 🌦️ Weather app
-#### A simple app that shows the weather information in a selected country using OpenWeather API, and a current time in a chosen city.
+#### A simple app that shows the weather information in a selected city using OpenWeather API, and a current time in a chosen city.
 
 ___
 
